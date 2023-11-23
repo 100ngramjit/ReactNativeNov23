@@ -21,6 +21,8 @@ import {
   Alert,
   Switch,
   TextInput,
+  Image,
+  ImageBackground,
 } from 'react-native';
 
 import {
@@ -150,6 +152,10 @@ function App() {
           placeholder="Enter text here"
         />
         <Button onPress={handleSubmit} title="Submit" />
+        <Image
+          source={{uri: 'https://picsum.photos/200'}}
+          style={styles.background}
+        />
       </ScrollView>
     </SafeAreaView>
   );
@@ -179,6 +185,11 @@ const styles = StyleSheet.create({
     fontSize: 100,
     fontWeight: '700',
     color: 'teal',
+  },
+  background: {
+    justifyContent: 'center',
+    width: 200,
+    height: 200,
   },
 });
 

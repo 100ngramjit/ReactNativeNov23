@@ -151,9 +151,9 @@ function App() {
           value={text}
           placeholder="Enter text here"
         />
-        <Button onPress={handleSubmit} title="Submit" />
+        <Button onPress={handleSubmit} title="Submit" disabled={!isEnabled} />
         <Image
-          source={{uri: 'https://picsum.photos/200'}}
+          source={{uri: 'https://picsum.photos/250'}}
           style={styles.background}
         />
       </ScrollView>

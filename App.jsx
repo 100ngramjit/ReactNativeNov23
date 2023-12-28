@@ -82,7 +82,7 @@ function App() {
     <SafeAreaView style={backgroundStyle}>
       <ScrollView>
         <Text style={styles.sectionTitle}>The Red Banana</Text>
-        <Text style={styles.headerCustom}>{count}</Text>
+        {/* <Text style={styles.headerCustom}>{count}</Text>
         <TouchableOpacity
           style={{
             borderColor: 'black',
@@ -95,7 +95,7 @@ function App() {
           }}
           onPress={() => setCount([...count, count[count.length - 1] + 1])}>
           <Text>click here</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
 
         <Button title="open modal" onPress={() => setIsModalVisible(true)} />
 
@@ -160,37 +160,5 @@ function App() {
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    backgroundColor: 'purple',
-    color: 'white',
-    padding: 25,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  headerCustom: {
-    fontSize: 100,
-    fontWeight: '700',
-    color: 'teal',
-  },
-  background: {
-    justifyContent: 'center',
-    width: 200,
-    height: 200,
-  },
-});
 
 export default App;
